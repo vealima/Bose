@@ -1,0 +1,180 @@
+.main {
+	padding: 120px;
+	background-color: white;
+}
+
+.recommended {
+	margin-bottom: 120px;
+	&__title {
+		margin-top: 0;
+		margin-bottom: 64px;
+		font-size: 48px;
+		line-height: 100%;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: -1.5px;
+		}
+	
+	&__products {
+		display: flex;
+		justify-content: center;
+		gap: 24px;
+		}
+}
+
+.product {
+	flex-basis: 324px;
+	&__photo {
+		width: 100%;
+		margin-bottom: 32px;
+		}
+	
+	&__title {
+		margin-top: 0;
+		margin-bottom: 8px;
+		font-size: 16px;
+		line-height: 140%;
+		}
+	
+	&__category {
+		margin-top: 0;
+		margin-bottom: 12px;
+		}
+	
+	&__price {
+		margin: 0;
+		font-weight: bold;
+		}
+}
+
+.categories {
+	max-width: 1020px;
+	margin: 0 auto;
+	margin-bottom: 120px;
+	&__title {
+		margin-top: 0;
+		margin-bottom: 64px;
+		font-size: 48px;
+		line-height: 100%;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: -1.5px;
+		}
+}
+
+.category {
+	margin-bottom: 64px;
+	&__photos {
+		display: flex;
+		gap: 3%;
+		margin-bottom: 16px;
+		}
+	
+	&__title {
+		margin: 0;
+		}
+}
+
+.photo-wide {
+	width: 65%;
+}
+
+.photo-square {
+	width: 32%;
+}
+
+.how-to-buy {
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	gap: 24px;
+	&__title {
+		flex-basis: 50%;
+		margin-top: 0;
+		margin-bottom: 64px;
+		font-size: 48px;
+		line-height: 100%;
+		font-weight: bold;
+		letter-spacing: -1.5px;
+		}
+	
+	&__content {
+		flex-basis: 50%;
+		}
+	
+	&__benefits {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		list-style: none;
+		padding: 10px 0 0 0;
+		margin: 0;
+		margin-bottom: 40px;
+		font-weight: bold;
+		}
+}
+
+@media (max-width: 767px) {
+	.main {
+		padding: 40px;
+	}
+
+	.recommended__title,
+	.categories__title,
+	.how-to-buy__title {
+		font-size: 32px;
+		line-height: 120%;
+	}
+
+	.recommended__products {
+		gap: 12px;
+		flex-wrap: wrap;
+		word-break: break-word;
+	}
+
+	.product__title {
+		font-size: 14px;
+		line-height: 130%;
+	}
+
+	.categories__title {
+		margin-bottom: 40px;
+	}
+
+	.how-to-buy {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.how-to-buy__title {
+		font-size: 32px;
+		line-height: 120%;
+	}
+
+	.how-to-buy__benefits {
+		font-size: 14px;
+		line-height: 130%;
+	}
+}
+
+@media (max-width: 767px) {
+	.category__photos {
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		align-content: center;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.photo-square {
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 65%;
+		align-content: center;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+}

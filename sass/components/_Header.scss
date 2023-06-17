@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: #292929;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background: url("../../assets/Images/header-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 48px;
+        line-height: 100%;
+        font-style: italic;
+        font-weight: 800;
+        letter-spacing: -1.5px;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background: #e5e5e5;
+    &:target {
+        transform: translateX(-0%);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__link {
+        color: #292929;
+		background-color: transparent !important;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		padding: 40px;
+	}
+	
+	.header__title {
+		margin-top: 20px;
+		font-size: 32px;
+	}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	transform: translateX(-100%);
+	transition: transform 500ms;
+	box-sizing: border-box;
+	height: 100vh;
+	padding: 64px 120px;
+	background: #e5e5e5;
+}
+
+.menu:target {
+	transform: translateX(-0%);
+}
+
+.menu__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.nav__link {
+	color: #292929;
+	background-color: transparent !important;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}

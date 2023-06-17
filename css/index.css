@@ -1,0 +1,567 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}
+
+nav {
+  height: auto !important;
+  background-color: transparent !important;
+  line-height: auto !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #292929;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background: url("../../assets/Images/header-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 100%;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background: #e5e5e5;
+}
+.menu:target {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.menu__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.nav__link {
+  color: #292929;
+  background-color: transparent !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 40px;
+  }
+  .header__title {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background: #e5e5e5;
+}
+
+.menu:target {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menu__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.nav__link {
+  color: #292929;
+  background-color: transparent !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main {
+  padding: 120px;
+  background-color: white;
+}
+
+.recommended {
+  margin-bottom: 120px;
+}
+.recommended__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+.recommended__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+
+.product {
+  -ms-flex-preferred-size: 324px;
+      flex-basis: 324px;
+}
+.product__photo {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.product__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 140%;
+}
+.product__category {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.product__price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.categories {
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.categories__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+.category {
+  margin-bottom: 64px;
+}
+.category__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+  margin-bottom: 16px;
+}
+.category__title {
+  margin: 0;
+}
+
+.photo-wide {
+  width: 65%;
+}
+
+.photo-square {
+  width: 32%;
+}
+
+.how-to-buy {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.how-to-buy__title {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}
+.how-to-buy__content {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.how-to-buy__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 40px;
+  }
+  .recommended__title,
+  .categories__title,
+  .how-to-buy__title {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .recommended__products {
+    gap: 12px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    word-break: break-word;
+  }
+  .product__title {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .categories__title {
+    margin-bottom: 40px;
+  }
+  .how-to-buy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .how-to-buy__title {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .how-to-buy__benefits {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+@media (max-width: 767px) {
+  .category__photos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .photo-square {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 65%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 460px;
+  background-image: url("../../assets/Images/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
